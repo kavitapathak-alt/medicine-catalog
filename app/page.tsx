@@ -7,7 +7,7 @@ const MEDICINES = [
   {
     id: 1,
     name: "Paracetamol 500mg",
-    description: "Effective relief from fever and mild to moderate pain like headaches and toothaches.",
+    description: "Effective relief from fever and mild to moderate pain like headaches and toothaches",
     category: "Pain Relief",
     image: "/paracetamol-box.jpg",
   },
@@ -15,7 +15,7 @@ const MEDICINES = [
     id: 2,
     name: "Amoxicillin 250mg",
     description: "Broad-spectrum antibiotic used to treat various bacterial infections in children and adults.",
-    category: "Antibiotics",
+    category: "Antibioticss",
     image: "/antibiotic-pills.jpg",
   },
   {
