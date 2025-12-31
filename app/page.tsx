@@ -7,7 +7,7 @@ const MEDICINES = [
   {
     id: 1,
     name: "Paracetamol 500mg",
-    description: "Effective relief from fever and mild to moderate pain like headaches and toothaches",
+    description: "Effective relief from fever and mild to moderate pain like headaches and toothaches.",
     category: "Pain Relief",
     image: "/paracetamol-box.jpg",
   },
@@ -15,7 +15,7 @@ const MEDICINES = [
     id: 2,
     name: "Amoxicillin 250mg",
     description: "Broad-spectrum antibiotic used to treat various bacterial infections in children and adults.",
-    category: "Antibioticss",
+    category: "Antibiotics",
     image: "/antibiotic-pills.jpg",
   },
   {
@@ -109,22 +109,30 @@ export default function MedicineCatalog() {
               </div>
             </div>
 
-            {/* Added a medical-themed image grid for the hero section */}
-            <div className="hidden lg:grid grid-cols-2 gap-4 relative">
-              <div className="space-y-4 pt-12">
-                <div className="rounded-3xl overflow-hidden shadow-2xl rotate-[-2deg] border-4 border-white">
-                  <img src="/pharmacist-helping-patient.jpg" alt="Healthcare" className="w-full h-48 object-cover" />
+            {/* Updated hero image grid to be visible on mobile and optimized for smaller screens */}
+            <div className="grid grid-cols-2 gap-3 md:gap-4 relative mt-8 lg:mt-0">
+              <div className="space-y-3 md:space-y-4 pt-8 md:pt-12">
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl rotate-[-2deg] border-2 md:border-4 border-white">
+                  <img
+                    src="/pharmacist-helping-patient.jpg"
+                    alt="Healthcare"
+                    className="w-full h-32 md:h-48 object-cover"
+                  />
                 </div>
-                <div className="rounded-3xl overflow-hidden shadow-2xl rotate-[2deg] border-4 border-white">
-                  <img src="/medical-pills-capsules.jpg" alt="Medicines" className="w-full h-64 object-cover" />
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl rotate-[2deg] border-2 md:border-4 border-white">
+                  <img src="/medical-pills-capsules.jpg" alt="Medicines" className="w-full h-40 md:h-64 object-cover" />
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="rounded-3xl overflow-hidden shadow-2xl rotate-[1deg] border-4 border-white">
-                  <img src="/doctor-stethoscope.jpg" alt="Expert Care" className="w-full h-64 object-cover" />
+              <div className="space-y-3 md:space-y-4">
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl rotate-[1deg] border-2 md:border-4 border-white">
+                  <img src="/doctor-stethoscope.jpg" alt="Expert Care" className="w-full h-40 md:h-64 object-cover" />
                 </div>
-                <div className="rounded-3xl overflow-hidden shadow-2xl rotate-[-3deg] border-4 border-white">
-                  <img src="/diverse-medical-equipment.png" alt="Supplies" className="w-full h-48 object-cover" />
+                <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl md:shadow-2xl rotate-[-3deg] border-2 md:border-4 border-white">
+                  <img
+                    src="/diverse-medical-equipment.png"
+                    alt="Supplies"
+                    className="w-full h-32 md:h-48 object-cover"
+                  />
                 </div>
               </div>
 
